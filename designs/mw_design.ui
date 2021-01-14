@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>851</width>
+    <height>660</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kaban</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../img/Без названия.png</normaloff>../img/Без названия.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #333333;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #ffffff;</string>
+        </property>
+        <property name="text">
+         <string>Ожидание</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #ffffff;</string>
+        </property>
+        <property name="text">
+         <string>Работа в процессе</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_3">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: #ffffff;</string>
+        </property>
+        <property name="text">
+         <string>Завершенная работа</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="5">
+       <widget class="Line" name="line">
+        <property name="styleSheet">
+         <string notr="true">background-color: #000000;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="Line" name="line_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: #000000;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="Line" name="line_5">
+        <property name="styleSheet">
+         <string notr="true">background-color: #000000;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4" rowspan="2">
+       <widget class="QScrollArea" name="scrollArea_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: #444444;</string>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>265</width>
+           <height>589</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <layout class="QVBoxLayout" name="doneLayout">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="2" column="2" rowspan="2">
+       <widget class="QScrollArea" name="scrollArea_2">
+        <property name="styleSheet">
+         <string notr="true">background-color: #444444;</string>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_5">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>265</width>
+           <height>589</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <layout class="QVBoxLayout" name="progressLayout">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="2" column="0" rowspan="2">
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="styleSheet">
+         <string notr="true">background-color: #444444;</string>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>265</width>
+           <height>589</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QVBoxLayout" name="toDoLayout">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item row="2" column="3" rowspan="2">
+       <widget class="Line" name="line_4">
+        <property name="styleSheet">
+         <string notr="true">background-color: #000000;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1" rowspan="2">
+       <widget class="Line" name="line_3">
+        <property name="styleSheet">
+         <string notr="true">background-color: #000000;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>851</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar {
+	background-color: #444444;
+	color: #ffffff;
+}
+
+QMenuBar:item:selected {
+	background-color: #555555;
+	color: #ffffff;
+}</string>
+   </property>
+   <widget class="QMenu" name="menuAdd_task">
+    <property name="styleSheet">
+     <string notr="true"> QMenu {
+     background-color: #666666;
+     border: 1px solid black;
+ }
+
+ QMenu:item {
+     background-color: transparent;
+	 color: #ffffff;
+ }
+
+ QMenu:item:selected { 
+     background-color: #777777;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Задача</string>
+    </property>
+    <addaction name="actionAdd_task"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="styleSheet">
+     <string notr="true"> QMenu {
+     background-color: #666666;
+     border: 1px solid black;
+ }
+
+ QMenu:item {
+     background-color: transparent;
+	 color: #ffffff;
+ }
+
+ QMenu:item:selected { 
+     background-color: #777777;
+ }</string>
+    </property>
+    <property name="title">
+     <string>Статистика</string>
+    </property>
+    <addaction name="actionShow_statistics"/>
+   </widget>
+   <addaction name="menuAdd_task"/>
+   <addaction name="menu"/>
+  </widget>
+  <action name="actionzz">
+   <property name="text">
+    <string>zz</string>
+   </property>
+  </action>
+  <action name="actionAdd_task">
+   <property name="text">
+    <string>Добавить задачу</string>
+   </property>
+  </action>
+  <action name="actionShow_statistics">
+   <property name="text">
+    <string>Узнать статистику</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
